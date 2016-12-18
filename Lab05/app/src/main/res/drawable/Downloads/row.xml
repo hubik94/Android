@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/rowLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/rowNationalityIcon"
+        android:layout_toStartOf="@+id/rowNationalityIcon" />
+
+    <TextView
+        android:id="@+id/rowName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rowLastName"
+        android:text="@string/name"
+        android:layout_toLeftOf="@+id/rowNationalityIcon"
+        android:layout_toStartOf="@+id/rowNationalityIcon"/>
+
+    <TextView
+        android:id="@+id/rowPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rowName"
+        android:text="@string/phone_number"
+        android:layout_toLeftOf="@+id/rowNationalityIcon"
+        android:layout_toStartOf="@+id/rowNationalityIcon"/>
+
+    <ImageView
+        android:id="@+id/rowGenderIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_male" />
+
+    <ImageView
+        android:id="@+id/rowNationalityIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/rowGenderIcon"
+        android:layout_toStartOf="@id/rowGenderIcon"
+        android:src="@mipmap/ic_poland" />
+</RelativeLayout>
